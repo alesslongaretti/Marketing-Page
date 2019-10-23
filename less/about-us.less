@@ -1,0 +1,186 @@
+nav {
+    display:flex;
+    justify-content: space-between;
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2vw 0vw 2vw 0vw;
+    align-items: center;
+    
+
+    @media @mobile {
+        display: flex;
+        flex-direction: column;
+        .mobilewidth();
+    }
+
+    div {
+        margin: 0vw 1vw 0vw 0vw;
+
+        @media @mobile {
+            padding: 3vw 0vw 0vw 0vw;
+        }
+
+        a {
+           text-decoration: none;
+           color: orange;
+           margin: 1vw;
+           font-size: 1.5rem; 
+           @media @mobile {
+            margin: 5vw;
+        }
+
+        }
+    }
+    h2 {
+        font-size: 3.5rem;
+        color: black;
+        font-weight: 900;
+        margin-left: 1vw;
+    }
+}
+
+
+header {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    
+    
+
+    @media @mobile {
+        .mobilewidth();
+      }
+
+
+    .food-picture {
+       max-width: 100%;
+       height: auto;
+
+
+    }
+    .header-text {
+        text-align: justify;
+
+
+        p {
+            line-height: 4rem;
+            font-size: 3rem;
+            border: black 1px solid;
+            padding: 8px;
+            margin: 10px 0px;
+
+            @media @mobile {
+                border: none;
+                font-size: 2rem;
+                line-height: 2.5rem;
+                padding: 0px;
+            }
+        }
+  
+        }
+    }
+
+
+
+body {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    
+
+    @media @mobile {
+        .mobilewidth();
+      }
+
+    .title {
+        color: rgb(59, 206, 30);
+        text-align: center;
+        margin-top: 7rem;
+        margin-bottom: 4rem;
+
+        @media @mobile {
+            margin-top: 5rem;
+        }
+
+    }  
+
+    .pictures {
+        display: flex;
+        justify-content: space-between;
+
+        @media @mobile {
+            display: block
+           
+        }
+        
+        .team-members {
+            margin: 4rem 0rem;
+            text-align: center;
+
+            @media @mobile {
+
+            }
+
+            .team-pictures {
+                width: 20rem;
+                border-radius: 5px;
+
+            }
+
+
+            h2 {
+                font-size: 2rem;
+                font-weight: 900;
+            }
+
+            @media @mobile {
+               
+    
+            }
+
+            p {
+                font-size: 2rem;
+                
+
+                @media @mobile {
+                  
+                
+                }
+            }
+            
+        }
+    }
+
+
+    .btn {
+        text-align: center;
+        margin: 3rem;
+
+        button {
+            font-size: 3rem;
+            color: white;
+            background-color: orange;
+            border-radius: 1rem;
+            padding: 1rem 2.5rem;
+
+            @media @mobile {
+                font-size: 2rem;
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+        padding-top: 2%;
+        font-weight: 900;
+        
+        p {
+            font-size: 1.5rem;
+
+            @media @mobile {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
