@@ -33,7 +33,7 @@ nav {
     }
     h2 {
         font-size: 4rem;
-        color: orange;
+        color: black;
         margin-left: 1vw;
     }
 }
@@ -64,8 +64,10 @@ header {
         transform: translate(-31.5%, -40%);
 
         @media @mobile {
-            display: block;
-
+            position: static;
+            top: 0%;
+            left: 0%;
+            transform: none;
         }
 
 
@@ -91,7 +93,7 @@ header {
             margin-top: 2rem;
 
             @media @mobile {
-                
+                margin-bottom: 40px;
             }
 
             }
@@ -117,7 +119,7 @@ body {
         @media @mobile {
             display: flex;
             flex-direction: column;
-            padding: none;
+            padding: initial;
         }
         
         .text-content {
@@ -132,19 +134,21 @@ body {
 
 
             h2 {
-                padding: 20px 0px 80px 0px;
+                padding: 20px 0px 0px 0px;
             }
 
             @media @mobile {
-                padding: none;
+
     
             }
 
             p {
-                padding: 0px 10px 10px 10px;
+                padding: 80px 10px 10px 10px;
 
                 @media @mobile {
-                    padding: 2px;
+                    padding: initial;
+                    margin: 35px 0px
+
                 }
             }
             

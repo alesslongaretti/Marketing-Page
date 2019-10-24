@@ -206,7 +206,7 @@ nav div a {
 }
 nav h2 {
   font-size: 4rem;
-  color: orange;
+  color: bl;
   margin-left: 1vw;
 }
 header {
@@ -234,7 +234,10 @@ header .header-text {
 }
 @media (max-width: 500px) {
   header .header-text {
-    display: block;
+    position: static;
+    top: 0%;
+    left: 0%;
+    transform: none;
   }
 }
 header .header-text p {
@@ -257,6 +260,11 @@ header .header-text button {
   border-radius: 0.5rem;
   margin-top: 2rem;
 }
+@media (max-width: 500px) {
+  header .header-text button {
+    margin-bottom: 40px;
+  }
+}
 body {
   max-width: 960px;
   width: 100%;
@@ -278,7 +286,7 @@ body .boxes {
   body .boxes {
     display: flex;
     flex-direction: column;
-    padding: none;
+    padding: initial;
   }
 }
 body .boxes .text-content {
@@ -293,19 +301,15 @@ body .boxes .text-content {
   }
 }
 body .boxes .text-content h2 {
-  padding: 20px 0px 80px 0px;
-}
-@media (max-width: 500px) {
-  body .boxes .text-content {
-    padding: none;
-  }
+  padding: 20px 0px 0px 0px;
 }
 body .boxes .text-content p {
-  padding: 0px 10px 10px 10px;
+  padding: 80px 10px 10px 10px;
 }
 @media (max-width: 500px) {
   body .boxes .text-content p {
-    padding: 2px;
+    padding: initial;
+    margin: 35px 0px;
   }
 }
 body .bottom-hr {
