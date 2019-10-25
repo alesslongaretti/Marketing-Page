@@ -231,7 +231,11 @@ header nav {
   header nav .mobile-nav {
     display: flex;
     justify-content: center;
+    text-decoration: none;
   }
+}
+header nav .mobile-nav a {
+  text-decoration: none;
 }
 header nav .mobile-nav h2 {
   font-size: 4rem;

@@ -16,7 +16,6 @@ header {
         padding: 2vw 0vw 2vw 0vw;
         align-items: center;
         
-    
         @media @mobile {
             display: flex;
             flex-direction: column;
@@ -26,7 +25,11 @@ header {
     
             @media @mobile {
                 .mobilenav();
-    
+                text-decoration: none;
+            }
+
+            a {
+                text-decoration: none;
             }
     
             h2 {
@@ -36,12 +39,13 @@ header {
                     justify-content: space-between;
                     margin-left: 5.2rem;
                     padding-left:10rem;
-    
+
                 }
             }
         
             .mobile-icon {
                 display: none;
+            
         
                 @media @mobile {
                     .navmobileicon();
