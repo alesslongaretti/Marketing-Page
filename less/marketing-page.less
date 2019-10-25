@@ -1,10 +1,8 @@
 body {
-    max-width: 960px;
-    width: 100%;
-    margin: 0 auto;
+    .webwidth();
 
     @media @tablet {
-        .tabletwidth;
+        .tabletwidth();
     }
 
     @media @mobile {
@@ -28,6 +26,11 @@ body {
             width: 28%;
             text-align: center;
 
+            @media @tablet {
+                border:none;
+                flex-wrap: wrap;
+            }
+
             @media @mobile {
                 border: none;
                 width: 100%;
@@ -36,13 +39,10 @@ body {
 
             h2 {
                 padding: 20px 0px 0px 0px;
-                color: orange;
+                color: @co-ora;
+                font-size:3rem;
             }
 
-            @media @mobile {
-
-    
-            }
 
             p {
                 padding: 80px 10px 10px 10px;
@@ -59,7 +59,7 @@ body {
 
 
     .portfolio {
-        color: rgb(59, 206, 30);
+        color: @co-gre;
         text-align: center;
         margin: 2rem 0rem 2.5rem 0rem;
 
