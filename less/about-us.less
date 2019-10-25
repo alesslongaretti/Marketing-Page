@@ -1,102 +1,107 @@
 
-// body {
-//     max-width: 960px;
-//     width: 100%;
-//     margin: 0 auto;
+body {
+    .webwidth();
+
+    @media @tablet {
+        .tabletwidth();
+    }
     
+    @media @mobile {
+        .mobilewidth();
+      }
 
-//     @media @mobile {
-//         .mobilewidth();
-//       }
+    .title {
+        color: @co-gre;
+        text-align: center;
+        margin-top: 7rem;
+        margin-bottom: 4rem;
 
-//     .title {
-//         color: rgb(59, 206, 30);
-//         text-align: center;
-//         margin-top: 7rem;
-//         margin-bottom: 4rem;
+        @media @tablet {
+            color: @co-ora;
+        }
 
-//         @media @mobile {
-//             margin-top: 5rem;
-//         }
+        @media @mobile {
+            margin-top: 5rem;
+            color: @co-gre;
+        }
 
-//     }  
+    }  
 
-//     .pictures {
-//         display: flex;
-//         justify-content: space-between;
+    .pictures {
+        display: flex;
+        justify-content: center;
+        flex-wrap:wrap;
+        
 
-//         @media @mobile {
-//             display: block
+        @media @mobile {
+            display: block
            
-//         }
+        }
         
-//         .team-members {
-//             margin: 4rem 0rem;
-//             text-align: center;
+        .team-members {
+            margin: 4rem 2rem;
+            text-align: center;
 
-//             @media @mobile {
+            @media @mobile {
 
-//             }
+            }
 
-//             .team-pictures {
-//                 width: 20rem;
-//                 border-radius: 5px;
+            .team-pictures {
+                width: 20rem;
+                border-radius: 5px;
 
-//             }
+            }
 
 
-//             h2 {
-//                 font-size: 2rem;
-//                 font-weight: 900;
-//             }
+            h2 {
+                font-size: 2rem;
+                font-weight: bolder;
+                margin-top:2rem;
 
-//             @media @mobile {
-               
-    
-//             }
+            }
 
-//             p {
-//                 font-size: 2rem;
-                
 
-//                 @media @mobile {
-                  
-                
-//                 }
-//             }
+            p {
+                font-size: 1.7rem;
+
+            }
             
-//         }
-//     }
+        }
+    }
 
 
-//     .btn {
-//         text-align: center;
-//         margin: 3rem;
+    .btn {
+        text-align: center;
+        margin: 3rem;
 
-//         button {
-//             font-size: 3rem;
-//             color: white;
-//             background-color: orange;
-//             border-radius: 1rem;
-//             padding: 1rem 2.5rem;
+        button {
 
-//             @media @mobile {
-//                 font-size: 2rem;
-//             }
-//         }
-//     }
+            .buttons(@co-ora,3rem);
 
-//     footer {
-//         text-align: center;
-//         padding-top: 2%;
-//         font-weight: 900;
+
+            @media @tablet {
+
+                .buttons(@co-gre,3rem);
+
+            }
+
+            @media @mobile {
+                .buttons(@co-ora,2rem);
+            }
+        }
+    }
+
+    footer {
+        text-align: center;
+        padding-top: 2%;
+        font-weight: 900;
         
-//         p {
-//             font-size: 1.5rem;
+        p {
+            font-size: 1.5rem;
 
-//             @media @mobile {
-//                 font-size: 1.2rem;
-//             }
-//         }
-//     }
-// }
+            @media @mobile {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
