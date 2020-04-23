@@ -1,0 +1,81 @@
+body {
+    .webwidth();
+
+    @media @tablet {
+        .tabletwidth();
+    }
+
+    @media @mobile {
+        .mobilewidth();
+      }
+
+
+    .boxes {
+        display: flex;
+        justify-content: space-around;
+        padding: 40px;
+
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+            padding: initial;
+        }
+        
+        .text-content {
+            border: black solid 1px;
+            width: 28%;
+            text-align: center;
+
+            @media @tablet {
+                border:none;
+                flex-wrap: wrap;
+            }
+
+            @media @mobile {
+                border: none;
+                width: 100%;
+            }
+
+
+            h2 {
+                padding: 20px 0px 0px 0px;
+                color: @co-ora;
+                font-size:3rem;
+            }
+
+
+            p {
+                padding: 80px 10px 10px 10px;
+
+                @media @mobile {
+                    padding: initial;
+                    margin: 35px 0px
+
+                }
+            }
+            
+        }
+    }
+
+
+    .portfolio {
+        color: @co-gre;
+        text-align: center;
+        margin: 2rem 0rem 2.5rem 0rem;
+
+        p {
+            font-size: 3rem;
+        }
+    }
+
+    footer {
+        text-align: center;
+        padding-top: 2%;
+        font-weight: 900;
+        
+        p {
+            font-size: 1.5rem;
+        }
+    }
+}
+
